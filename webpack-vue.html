@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack 搭建vue环境 | 素妆技术博客</title>
+    <meta name="description" content="技术博客，内容多以工作学习中的实践经验为主，主要侧重于前端方向">
+    
+    
+    <link rel="preload" href="/assets/css/styles.1700d348.css" as="style"><link rel="preload" href="/assets/js/app.1700d348.js" as="script"><link rel="preload" href="/assets/js/23.98aee9d6.js" as="script"><link rel="prefetch" href="/assets/js/1.a5f23d81.js"><link rel="prefetch" href="/assets/js/10.ea35f83b.js"><link rel="prefetch" href="/assets/js/11.43ee7260.js"><link rel="prefetch" href="/assets/js/12.e4255072.js"><link rel="prefetch" href="/assets/js/13.1790464a.js"><link rel="prefetch" href="/assets/js/14.8f998397.js"><link rel="prefetch" href="/assets/js/15.c504318f.js"><link rel="prefetch" href="/assets/js/16.07eedc5e.js"><link rel="prefetch" href="/assets/js/17.61192b7e.js"><link rel="prefetch" href="/assets/js/18.3b928a01.js"><link rel="prefetch" href="/assets/js/19.9f962ae5.js"><link rel="prefetch" href="/assets/js/2.58bf56ce.js"><link rel="prefetch" href="/assets/js/20.cf8c0abf.js"><link rel="prefetch" href="/assets/js/21.d3213113.js"><link rel="prefetch" href="/assets/js/22.dc22b7ce.js"><link rel="prefetch" href="/assets/js/24.3c7c5e9a.js"><link rel="prefetch" href="/assets/js/25.72b30a79.js"><link rel="prefetch" href="/assets/js/3.98a464b0.js"><link rel="prefetch" href="/assets/js/4.6e491b29.js"><link rel="prefetch" href="/assets/js/5.3f38bc31.js"><link rel="prefetch" href="/assets/js/6.6aff7983.js"><link rel="prefetch" href="/assets/js/7.4d654c70.js"><link rel="prefetch" href="/assets/js/8.22705928.js"><link rel="prefetch" href="/assets/js/9.44fd09d3.js">
+    <link rel="stylesheet" href="/assets/css/styles.1700d348.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      素妆技术博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/dreamerldq" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/dreamerldq" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/webpack.html" class="sidebar-link">webpack-react-ts配置</a></li><li><a href="/githubpage.html" class="sidebar-link">github page 部署</a></li><li><a href="/iconfont.html" class="sidebar-link">文字图标的使用</a></li><li><a href="/miniPrograme.html" class="sidebar-link">小程序开发总结</a></li><li><a href="/redux.html" class="sidebar-link">Redux源码解析</a></li><li><a href="/wixinqr.html" class="sidebar-link">微信小程序二维码生成</a></li><li><a href="/webpack-vue.html" class="active sidebar-link">webpack-vue多页面配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/egg.html" class="sidebar-link">egg框架</a></li><li><a href="/eslint.html" class="sidebar-link">微信小程序eslint配置</a></li><li><a href="/H5_Video.html" class="sidebar-link">H5录制视频</a></li><li><a href="/minicanvas.html" class="sidebar-link">微信小程序canvas生成图片转base64</a></li><li><a href="/webaudio.html" class="sidebar-link">web audio api 绘制频率图</a></li><li><a href="/globalNotice.html" class="sidebar-link">React全局通知组件的实现</a></li><li><a href="/cssinjs.html" class="sidebar-link">css in js在React中的使用</a></li><li><a href="/React.cloneElement.html" class="sidebar-link">React.cloneElement实现单选框组</a></li><li><a href="/mobile.html" class="sidebar-link">移动端适配（H5 and RN）</a></li><li><a href="/Nginx.html" class="sidebar-link">Nginx配置</a></li><li><a href="/browserCache.html" class="sidebar-link">浏览器缓存机制</a></li></ul></div><div class="page"><div class="content"><h1 id="webpack-搭建vue环境"><a href="#webpack-搭建vue环境" aria-hidden="true" class="header-anchor">#</a> webpack 搭建vue环境</h1><h3 id="package-json"><a href="#package-json" aria-hidden="true" class="header-anchor">#</a> package.json</h3><div class="language- extra-class"><pre class="language-text"><code>  &quot;devDependencies&quot;: {
+    &quot;@babel/cli&quot;: &quot;^7.1.0&quot;,
+    &quot;@babel/core&quot;: &quot;^7.1.0&quot;,
+    &quot;@babel/preset-env&quot;: &quot;^7.1.0&quot;,
+    &quot;@commitlint/cli&quot;: &quot;^7.1.2&quot;,
+    &quot;@commitlint/config-conventional&quot;: &quot;^7.1.2&quot;,
+    &quot;autoprefixer&quot;: &quot;^9.1.5&quot;,
+    &quot;babel-loader&quot;: &quot;^8.0.2&quot;,
+    &quot;babel-plugin-component&quot;: &quot;^1.1.1&quot;,
+    &quot;clean-webpack-plugin&quot;: &quot;^0.1.19&quot;,
+    &quot;copy-webpack-plugin&quot;: &quot;^4.5.2&quot;,
+    &quot;css-loader&quot;: &quot;^1.0.0&quot;,
+    &quot;eslint&quot;: &quot;^5.6.0&quot;,
+    &quot;eslint-config-airbnb-base&quot;: &quot;^13.1.0&quot;,
+    &quot;eslint-plugin-import&quot;: &quot;^2.14.0&quot;,
+    &quot;eslint-plugin-vue&quot;: &quot;^5.0.0-beta.3&quot;,
+    &quot;file-loader&quot;: &quot;^2.0.0&quot;,
+    &quot;html-webpack-plugin&quot;: &quot;^3.2.0&quot;,
+    &quot;husky&quot;: &quot;^0.14.3&quot;,
+    &quot;mini-css-extract-plugin&quot;: &quot;^0.4.3&quot;,
+    &quot;node-sass&quot;: &quot;^4.9.3&quot;,
+    &quot;postcss-loader&quot;: &quot;^3.0.0&quot;,
+    &quot;sass&quot;: &quot;^1.13.4&quot;,
+    &quot;sass-loader&quot;: &quot;^7.1.0&quot;,
+    &quot;style-loader&quot;: &quot;^0.23.0&quot;,
+    &quot;url-loader&quot;: &quot;^1.1.1&quot;,
+    &quot;vue-loader&quot;: &quot;^15.4.2&quot;,
+    &quot;vue-template-compiler&quot;: &quot;^2.5.17&quot;,
+    &quot;webpack&quot;: &quot;^4.19.1&quot;,
+    &quot;webpack-cli&quot;: &quot;^3.1.0&quot;,
+    &quot;webpack-dev-server&quot;: &quot;^3.1.8&quot;,
+    &quot;webpack-merge&quot;: &quot;^4.1.4&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;axios&quot;: &quot;^0.18.0&quot;,
+    &quot;element-ui&quot;: &quot;^2.4.7&quot;,
+    &quot;vue&quot;: &quot;^2.5.17&quot;
+  }
+</code></pre></div><h3 id="babelrc"><a href="#babelrc" aria-hidden="true" class="header-anchor">#</a> .babelrc</h3><div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;presets&quot;: [
+    [&quot;@babel/preset-env&quot;, {
+      &quot;modules&quot;: false,
+      &quot;targets&quot;: {
+        &quot;browsers&quot;: [&quot;&gt; 1%&quot;, &quot;last 2 versions&quot;, &quot;not ie &lt;= 8&quot;]
+      },
+      &quot;useBuiltIns&quot;: &quot;usage&quot; // 为每个文件添加 polyfill
+    }]
+  ],
+  &quot;plugins&quot;: [
+    [
+      &quot;component&quot;,
+      {
+        &quot;libraryName&quot;: &quot;element-ui&quot;, // 按需引入element-ui  例如：Vue.use(Button)
+        &quot;styleLibraryName&quot;: &quot;theme-chalk&quot; // 引入css  需要在webpack中使用url-loader配置字体和图片的处理
+      }
+    ]
+  ]
+}
+</code></pre></div><h3 id="eslintrc"><a href="#eslintrc" aria-hidden="true" class="header-anchor">#</a> .eslintrc</h3><div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;extends&quot;: [
+    &quot;eslint-config-airbnb-base&quot;,
+    &quot;plugin:vue/base&quot;
+  ],
+  &quot;rules&quot;: {
+    &quot;no-console&quot;: &quot;off&quot;,
+    &quot;no-unused-vars&quot;: [0],
+    &quot;no-underscore-dangle&quot;: [0],
+    &quot;no-param-reassign&quot;: [0],
+    &quot;camelcase&quot;: [0],
+    &quot;no-useless-constructor&quot;: [0],
+    &quot;class-methods-use-this&quot;: [0],
+    &quot;import/no-extraneous-dependencies&quot;: [0],
+    &quot;react/prop-types&quot;: [0],
+    &quot;max-len&quot;: [0],
+    &quot;react/no-unescaped-entities&quot;: [0],
+    &quot;no-new&quot;: [0],
+    &quot;import/no-unresolved&quot;: [0]
+  }
+}
+</code></pre></div><h3 id="commitlint-config-js"><a href="#commitlint-config-js" aria-hidden="true" class="header-anchor">#</a> commitlint.config.js</h3><div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  extends: ['@commitlint/config-conventional'], // Conventional Commits 规范
+};
+
+</code></pre></div><h3 id="webpack-common-js"><a href="#webpack-common-js" aria-hidden="true" class="header-anchor">#</a> webpack.common.js</h3><div class="language- extra-class"><pre class="language-text"><code>const fs = require('fs');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const basic_path = path.resolve();
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const pages = fs.readdirSync(path.resolve(__dirname, 'src/pages')); // 获取所有页面的名称
+
+let entry = {
+};
+
+const output = {
+  filename: 'js/[name].bundle.js', // 指定输出文件的名字
+  path: path.join(basic_path, 'build'), // 指定输出文件的地址
+  // publicPath: ''  // 静态资源线上存储路径
+};
+
+const plugins = [
+  new VueLoaderPlugin(), // 解析Vue文件必须使用的plugin
+  new CleanWebpackPlugin(['build']), // 再每次build的时候清空之前生成的build文件
+  // new CopyWebpackPlugin([   // 图片备用处理方案，不使用dns情况下
+  //   {from:'images',to:'images'} // 将指定的文件夹移动到输出的build文件夹下指定的路径
+  // ]),
+];
+pages.forEach((key) =&gt; {
+  // 遍历所有的页面，将其添加到entry中
+  entry = Object.assign({}, entry, { [key]: `${basic_path}/src/pages/${key}/index.js` });
+  plugins.push(new HtmlWebpackPlugin({
+    title: `页面${key}`, // 为html提供模板能力 htmlWebpackPlugin.options.title 改变title
+    filename: `html/${key}.html`, // 输出的html文件的名称
+    template: path.join(__dirname, 'src', 'index.html'), // 渲染模板
+    chunks: [key], // 多页面应用中通过chunks区分不同的生成不同的页面
+    inject: true, // 将所有html中相关联的js添加到body的末尾  将css通过link添加到head中
+  }));
+});
+const common_config = {
+  entry,
+  output,
+  optimization: {
+    splitChunks: { // 拆分vue第三方包为独立的模块
+      cacheGroups: {
+        vendor: {
+          chunks: 'initial',
+          test: /vue/,
+          name: 'vue',
+          enforce: true,
+        },
+      },
+    },
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192, // 图片小于指定大小，会将文件转换成DataURL， 大于则类似file-loader处理
+              name: '[name].[ext]',
+              outputPath: '/images', // 设置成绝对路径， dev =&gt; /images   prod =&gt; ../images
+              // publicPath: '' //静态资源路径
+            },
+          },
+        ],
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+      },
+      {
+        test: /\.(js)$/,
+        use: [
+          { loader: 'babel-loader' }, // 使用babel对每一个指定的js文件做转换。将所有高版本的语法转换成大多数浏览器支持的语法
+        ],
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 50000,
+          name: '[name].[ext]',
+          outputPath: '/fonts',
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: loader =&gt; [
+                autoprefixer(), // 针对各个浏览器对css支持的不同，自动添加前缀
+              ],
+            },
+          },
+        ],
+      },
+
+    ],
+  },
+  resolve: {
+    alias: {
+      vue$: 'vue/dist/vue.esm.js', // 天坑...  不添加这个Vue无法正常获取el
+      images: path.join(__dirname, 'images'),
+      components: path.join(__dirname, 'src', 'components'),
+      services: path.join(__dirname, 'src', 'services'),
+    },
+    extensions: ['.js', '.vue', '.json'],
+  },
+  plugins,
+  devServer: {
+    noInfo: true,
+    stats: 'errors-only',
+  },
+};
+
+module.exports = common_config;
+
+</code></pre></div><h3 id="webpack-dev-js"><a href="#webpack-dev-js" aria-hidden="true" class="header-anchor">#</a> webpack.dev.js</h3><div class="language- extra-class"><pre class="language-text"><code>const merge = require('webpack-merge');
+const common = require('./webpack.common.js');
+
+module.exports = merge(common, {
+  mode: 'development',
+  devtool: 'source-map', // 在开发环境中使用source-map，如果代码出现了错误，可以追踪到源码，而不是转译后的代码
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+
+              minimize: true,
+
+            },
+          },
+          { loader: 'sass-loader' },
+        ],
+      },
+    ],
+  },
+});
+
+</code></pre></div><h3 id="webpack-prod-js"><a href="#webpack-prod-js" aria-hidden="true" class="header-anchor">#</a> webpack.prod.js</h3><div class="language- extra-class"><pre class="language-text"><code>const merge = require('webpack-merge');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const common = require('./webpack.common.js');
+
+module.exports = merge(common, {
+  mode: 'production',
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              minimize: true,
+            },
+          },
+          { loader: 'sass-loader' },
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
+
+    }),
+  ],
+});
+
+</code></pre></div></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/wixinqr.html" class="prev">
+          微信小程序二维码生成
+        </a></span><span class="next"><a href="/egg.html">
+          egg框架
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/app.1700d348.js" defer></script><script src="/assets/js/23.98aee9d6.js" defer></script>
+  </body>
+</html>

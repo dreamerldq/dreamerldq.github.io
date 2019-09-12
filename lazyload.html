@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lazy-load实现 | 素妆技术博客</title>
+    <meta name="description" content="技术博客，内容多以工作学习中的实践经验为主，主要侧重于前端方向">
+    
+    
+    <link rel="preload" href="/assets/css/styles.1700d348.css" as="style"><link rel="preload" href="/assets/js/app.1700d348.js" as="script"><link rel="preload" href="/assets/js/14.8f998397.js" as="script"><link rel="prefetch" href="/assets/js/1.a5f23d81.js"><link rel="prefetch" href="/assets/js/10.ea35f83b.js"><link rel="prefetch" href="/assets/js/11.43ee7260.js"><link rel="prefetch" href="/assets/js/12.e4255072.js"><link rel="prefetch" href="/assets/js/13.1790464a.js"><link rel="prefetch" href="/assets/js/15.c504318f.js"><link rel="prefetch" href="/assets/js/16.07eedc5e.js"><link rel="prefetch" href="/assets/js/17.61192b7e.js"><link rel="prefetch" href="/assets/js/18.3b928a01.js"><link rel="prefetch" href="/assets/js/19.9f962ae5.js"><link rel="prefetch" href="/assets/js/2.58bf56ce.js"><link rel="prefetch" href="/assets/js/20.cf8c0abf.js"><link rel="prefetch" href="/assets/js/21.d3213113.js"><link rel="prefetch" href="/assets/js/22.dc22b7ce.js"><link rel="prefetch" href="/assets/js/23.98aee9d6.js"><link rel="prefetch" href="/assets/js/24.3c7c5e9a.js"><link rel="prefetch" href="/assets/js/25.72b30a79.js"><link rel="prefetch" href="/assets/js/3.98a464b0.js"><link rel="prefetch" href="/assets/js/4.6e491b29.js"><link rel="prefetch" href="/assets/js/5.3f38bc31.js"><link rel="prefetch" href="/assets/js/6.6aff7983.js"><link rel="prefetch" href="/assets/js/7.4d654c70.js"><link rel="prefetch" href="/assets/js/8.22705928.js"><link rel="prefetch" href="/assets/js/9.44fd09d3.js">
+    <link rel="stylesheet" href="/assets/css/styles.1700d348.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      素妆技术博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/dreamerldq" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/dreamerldq" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/webpack.html" class="sidebar-link">webpack-react-ts配置</a></li><li><a href="/githubpage.html" class="sidebar-link">github page 部署</a></li><li><a href="/iconfont.html" class="sidebar-link">文字图标的使用</a></li><li><a href="/miniPrograme.html" class="sidebar-link">小程序开发总结</a></li><li><a href="/redux.html" class="sidebar-link">Redux源码解析</a></li><li><a href="/wixinqr.html" class="sidebar-link">微信小程序二维码生成</a></li><li><a href="/webpack-vue.html" class="sidebar-link">webpack-vue多页面配置</a></li><li><a href="/egg.html" class="sidebar-link">egg框架</a></li><li><a href="/eslint.html" class="sidebar-link">微信小程序eslint配置</a></li><li><a href="/H5_Video.html" class="sidebar-link">H5录制视频</a></li><li><a href="/minicanvas.html" class="sidebar-link">微信小程序canvas生成图片转base64</a></li><li><a href="/webaudio.html" class="sidebar-link">web audio api 绘制频率图</a></li><li><a href="/globalNotice.html" class="sidebar-link">React全局通知组件的实现</a></li><li><a href="/cssinjs.html" class="sidebar-link">css in js在React中的使用</a></li><li><a href="/React.cloneElement.html" class="sidebar-link">React.cloneElement实现单选框组</a></li><li><a href="/mobile.html" class="sidebar-link">移动端适配（H5 and RN）</a></li><li><a href="/Nginx.html" class="sidebar-link">Nginx配置</a></li><li><a href="/browserCache.html" class="sidebar-link">浏览器缓存机制</a></li></ul></div><div class="page"><div class="content"><h3 id="lazy-load实现"><a href="#lazy-load实现" aria-hidden="true" class="header-anchor">#</a> lazy-load实现</h3><ul><li>html5懒加载实现</li><li>微信小程序懒加载实现</li></ul><h2 id="微信小程序懒加载"><a href="#微信小程序懒加载" aria-hidden="true" class="header-anchor">#</a> 微信小程序懒加载</h2><p>监听页面的scroll事件,判读元素距离页面的top值是否是小于等于页面的可视高度</p><div class="language- extra-class"><pre class="language-text"><code>showImg(){
+	let group = this.data.group
+	let height = this.data.height  // 页面的可视高度
+	
+	wx.createSelectorQuery().selectAll('.item').boundingClientRect((ret) =&gt; {
+	 ret.forEach((item, index) =&gt; {
+	   if (item.top &lt;= height) { 判断是否在显示范围内
+	     group[index].show = true // 根据下标改变状态
+	   }
+	 })
+	 this.setData({
+	   group
+	 })
+	}).exec()
+
+}
+onPageScroll(){ // 滚动事件
+	this.showImg()
+}
+
+onload(){
+     wx.getSystemInfo({  // 获取页面可视区域的高度
+      success: (res) =&gt;{
+        this.setData({
+          height: res.screenHeight
+        })
+}
+</code></pre></div><p>通过<code>getSystemInfo</code>可以获取到设备的信息，在这里我们主要用到设备的屏幕尺寸信息。
+使用<code>createSelectorQuery().selectAll()</code>函数可以获取到指定的节点，并通过<code>boundingClientRect</code>来获取节点的信息
+在每次滚动页面的时候，调用showimg函数，遍历判断每一个节点距离屏幕顶部的高度是否小于屏幕的高度（以此来判断节点是否进入了屏幕可视范围中），然后将对应的ing显示出来。</p><h3 id="实现方式2"><a href="#实现方式2" aria-hidden="true" class="header-anchor">#</a> 实现方式2</h3><p>在微信api中其实提供了一些页面元素交叉的api</p><div class="language- extra-class"><pre class="language-text"><code>Page({
+  onLoad: function(){
+    wx.createIntersectionObserver().relativeToViewport().observe('.target-class', (res) =&gt; {
+      res.id // 目标节点 id
+      res.dataset // 目标节点 dataset
+      res.intersectionRatio // 相交区域占目标节点的布局区域的比例
+      res.intersectionRect // 相交区域
+      res.intersectionRect.left // 相交区域的左边界坐标
+      res.intersectionRect.top // 相交区域的上边界坐标
+      res.intersectionRect.width // 相交区域的宽度
+      res.intersectionRect.height // 相交区域的高度
+    })
+  }
+})
+</code></pre></div><p><code>relativeToViewport</code> 交叉区域的参照元素就是屏幕的可视区域。 <code>observe用来设置被监听的元素， 回调函数中的参数对象提供了一些基本信息</code> ，一旦被监听的元素进入了可是区域，就可以实现是否显示图片的判断。</p><h2 id="html5中的实现"><a href="#html5中的实现" aria-hidden="true" class="header-anchor">#</a> HTML5中的实现</h2><p>浏览器中也提供了类似的api 	<code>Intersection Observer API</code> 使用方式和小程序中的<code>createIntersectionObserver</code> 类似</p></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
+    <script src="/assets/js/app.1700d348.js" defer></script><script src="/assets/js/14.8f998397.js" defer></script>
+  </body>
+</html>

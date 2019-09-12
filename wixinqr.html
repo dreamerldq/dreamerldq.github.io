@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微信小程序生成指定页面跳转二维码流程 | 素妆技术博客</title>
+    <meta name="description" content="技术博客，内容多以工作学习中的实践经验为主，主要侧重于前端方向">
+    
+    
+    <link rel="preload" href="/assets/css/styles.1700d348.css" as="style"><link rel="preload" href="/assets/js/app.1700d348.js" as="script"><link rel="preload" href="/assets/js/25.72b30a79.js" as="script"><link rel="prefetch" href="/assets/js/1.a5f23d81.js"><link rel="prefetch" href="/assets/js/10.ea35f83b.js"><link rel="prefetch" href="/assets/js/11.43ee7260.js"><link rel="prefetch" href="/assets/js/12.e4255072.js"><link rel="prefetch" href="/assets/js/13.1790464a.js"><link rel="prefetch" href="/assets/js/14.8f998397.js"><link rel="prefetch" href="/assets/js/15.c504318f.js"><link rel="prefetch" href="/assets/js/16.07eedc5e.js"><link rel="prefetch" href="/assets/js/17.61192b7e.js"><link rel="prefetch" href="/assets/js/18.3b928a01.js"><link rel="prefetch" href="/assets/js/19.9f962ae5.js"><link rel="prefetch" href="/assets/js/2.58bf56ce.js"><link rel="prefetch" href="/assets/js/20.cf8c0abf.js"><link rel="prefetch" href="/assets/js/21.d3213113.js"><link rel="prefetch" href="/assets/js/22.dc22b7ce.js"><link rel="prefetch" href="/assets/js/23.98aee9d6.js"><link rel="prefetch" href="/assets/js/24.3c7c5e9a.js"><link rel="prefetch" href="/assets/js/3.98a464b0.js"><link rel="prefetch" href="/assets/js/4.6e491b29.js"><link rel="prefetch" href="/assets/js/5.3f38bc31.js"><link rel="prefetch" href="/assets/js/6.6aff7983.js"><link rel="prefetch" href="/assets/js/7.4d654c70.js"><link rel="prefetch" href="/assets/js/8.22705928.js"><link rel="prefetch" href="/assets/js/9.44fd09d3.js">
+    <link rel="stylesheet" href="/assets/css/styles.1700d348.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      素妆技术博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/dreamerldq" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/dreamerldq" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/webpack.html" class="sidebar-link">webpack-react-ts配置</a></li><li><a href="/githubpage.html" class="sidebar-link">github page 部署</a></li><li><a href="/iconfont.html" class="sidebar-link">文字图标的使用</a></li><li><a href="/miniPrograme.html" class="sidebar-link">小程序开发总结</a></li><li><a href="/redux.html" class="sidebar-link">Redux源码解析</a></li><li><a href="/wixinqr.html" class="active sidebar-link">微信小程序二维码生成</a></li><li><a href="/webpack-vue.html" class="sidebar-link">webpack-vue多页面配置</a></li><li><a href="/egg.html" class="sidebar-link">egg框架</a></li><li><a href="/eslint.html" class="sidebar-link">微信小程序eslint配置</a></li><li><a href="/H5_Video.html" class="sidebar-link">H5录制视频</a></li><li><a href="/minicanvas.html" class="sidebar-link">微信小程序canvas生成图片转base64</a></li><li><a href="/webaudio.html" class="sidebar-link">web audio api 绘制频率图</a></li><li><a href="/globalNotice.html" class="sidebar-link">React全局通知组件的实现</a></li><li><a href="/cssinjs.html" class="sidebar-link">css in js在React中的使用</a></li><li><a href="/React.cloneElement.html" class="sidebar-link">React.cloneElement实现单选框组</a></li><li><a href="/mobile.html" class="sidebar-link">移动端适配（H5 and RN）</a></li><li><a href="/Nginx.html" class="sidebar-link">Nginx配置</a></li><li><a href="/browserCache.html" class="sidebar-link">浏览器缓存机制</a></li></ul></div><div class="page"><div class="content"><h1 id="微信小程序生成指定页面跳转二维码流程"><a href="#微信小程序生成指定页面跳转二维码流程" aria-hidden="true" class="header-anchor">#</a> 微信小程序生成指定页面跳转二维码流程</h1><p>微信小程序可以通过请求微信的一些接口，然后返回指定页面的小程序的二维码。
+首先得通过一个接口获取到token</p><div class="language- extra-class"><pre class="language-text"><code>https请求方式: GET
+https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET
+</code></pre></div><p>appid 和 secrer 都可以在微信小程序的设置里面找到。</p><p>然后通过这个接口获取二维码</p><div class="language- extra-class"><pre class="language-text"><code>https请求方式: POST
+https://api.weixin.qq.com/wxa/getwxacode?access_token=ACCESS_TOKEN
+</code></pre></div><p>POST 参数说明</p><p>参数
+path  &quot;pages/index?query=1&quot;  // 指定页面，并且可以传递参数</p><p>width</p><p>auto_color	Bool</p><p>line_color	Object	{&quot;r&quot;:&quot;0&quot;,&quot;g&quot;:&quot;0&quot;,&quot;b&quot;:&quot;0&quot;}&quot;b&quot;:&quot;xxx&quot;}</p><p>is_hyaline	Bool	false	是否需要透明底色</p><h1 id="这个接口会返回二维码的图片"><a href="#这个接口会返回二维码的图片" aria-hidden="true" class="header-anchor">#</a><code>这个接口会返回二维码的图片</code></h1></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/redux.html" class="prev">
+          Redux源码解析
+        </a></span><span class="next"><a href="/webpack-vue.html">
+          webpack-vue多页面配置
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/app.1700d348.js" defer></script><script src="/assets/js/25.72b30a79.js" defer></script>
+  </body>
+</html>

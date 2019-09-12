@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>egg 框架的使用 | 素妆技术博客</title>
+    <meta name="description" content="技术博客，内容多以工作学习中的实践经验为主，主要侧重于前端方向">
+    
+    
+    <link rel="preload" href="/assets/css/styles.1700d348.css" as="style"><link rel="preload" href="/assets/js/app.1700d348.js" as="script"><link rel="preload" href="/assets/js/9.44fd09d3.js" as="script"><link rel="prefetch" href="/assets/js/1.a5f23d81.js"><link rel="prefetch" href="/assets/js/10.ea35f83b.js"><link rel="prefetch" href="/assets/js/11.43ee7260.js"><link rel="prefetch" href="/assets/js/12.e4255072.js"><link rel="prefetch" href="/assets/js/13.1790464a.js"><link rel="prefetch" href="/assets/js/14.8f998397.js"><link rel="prefetch" href="/assets/js/15.c504318f.js"><link rel="prefetch" href="/assets/js/16.07eedc5e.js"><link rel="prefetch" href="/assets/js/17.61192b7e.js"><link rel="prefetch" href="/assets/js/18.3b928a01.js"><link rel="prefetch" href="/assets/js/19.9f962ae5.js"><link rel="prefetch" href="/assets/js/2.58bf56ce.js"><link rel="prefetch" href="/assets/js/20.cf8c0abf.js"><link rel="prefetch" href="/assets/js/21.d3213113.js"><link rel="prefetch" href="/assets/js/22.dc22b7ce.js"><link rel="prefetch" href="/assets/js/23.98aee9d6.js"><link rel="prefetch" href="/assets/js/24.3c7c5e9a.js"><link rel="prefetch" href="/assets/js/25.72b30a79.js"><link rel="prefetch" href="/assets/js/3.98a464b0.js"><link rel="prefetch" href="/assets/js/4.6e491b29.js"><link rel="prefetch" href="/assets/js/5.3f38bc31.js"><link rel="prefetch" href="/assets/js/6.6aff7983.js"><link rel="prefetch" href="/assets/js/7.4d654c70.js"><link rel="prefetch" href="/assets/js/8.22705928.js">
+    <link rel="stylesheet" href="/assets/css/styles.1700d348.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      素妆技术博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/dreamerldq" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/dreamerldq" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/webpack.html" class="sidebar-link">webpack-react-ts配置</a></li><li><a href="/githubpage.html" class="sidebar-link">github page 部署</a></li><li><a href="/iconfont.html" class="sidebar-link">文字图标的使用</a></li><li><a href="/miniPrograme.html" class="sidebar-link">小程序开发总结</a></li><li><a href="/redux.html" class="sidebar-link">Redux源码解析</a></li><li><a href="/wixinqr.html" class="sidebar-link">微信小程序二维码生成</a></li><li><a href="/webpack-vue.html" class="sidebar-link">webpack-vue多页面配置</a></li><li><a href="/egg.html" class="active sidebar-link">egg框架</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/eslint.html" class="sidebar-link">微信小程序eslint配置</a></li><li><a href="/H5_Video.html" class="sidebar-link">H5录制视频</a></li><li><a href="/minicanvas.html" class="sidebar-link">微信小程序canvas生成图片转base64</a></li><li><a href="/webaudio.html" class="sidebar-link">web audio api 绘制频率图</a></li><li><a href="/globalNotice.html" class="sidebar-link">React全局通知组件的实现</a></li><li><a href="/cssinjs.html" class="sidebar-link">css in js在React中的使用</a></li><li><a href="/React.cloneElement.html" class="sidebar-link">React.cloneElement实现单选框组</a></li><li><a href="/mobile.html" class="sidebar-link">移动端适配（H5 and RN）</a></li><li><a href="/Nginx.html" class="sidebar-link">Nginx配置</a></li><li><a href="/browserCache.html" class="sidebar-link">浏览器缓存机制</a></li></ul></div><div class="page"><div class="content"><h1 id="egg-框架的使用"><a href="#egg-框架的使用" aria-hidden="true" class="header-anchor">#</a> egg 框架的使用</h1><p>介绍egg框架的基本使用方法，如：</p><ul><li><h3 id="router配置"><a href="#router配置" aria-hidden="true" class="header-anchor">#</a> router配置</h3></li><li><h3 id="controller使用方法"><a href="#controller使用方法" aria-hidden="true" class="header-anchor">#</a> controller使用方法</h3></li><li><h3 id="model（squelize）关联数据库"><a href="#model（squelize）关联数据库" aria-hidden="true" class="header-anchor">#</a> model（squelize）关联数据库</h3></li><li><h3 id="plugin配置"><a href="#plugin配置" aria-hidden="true" class="header-anchor">#</a> plugin配置</h3></li><li><h3 id="config配置"><a href="#config配置" aria-hidden="true" class="header-anchor">#</a> config配置</h3></li><li><h3 id="model创建"><a href="#model创建" aria-hidden="true" class="header-anchor">#</a> Model创建</h3></li></ul><p>egg-squelize的使用方法
+首先需要下载 <code>egg-sequelize 和 mysql2</code>包
+然后在config文件中配置egg-sequelize</p><div class="language- extra-class"><pre class="language-text"><code>  exports.sequelize = {
+    // 数据库类型
+    dialect: &quot;mysql&quot;,
+    // host
+    host: &quot;localhost&quot;,
+    // 端口号
+    port: &quot;3306&quot;,
+    // 用户名
+    username: &quot;root&quot;,
+    // 密码
+    password: &quot;***&quot;,
+    // 数据库名
+    database: &quot;***&quot;
+  };
+</code></pre></div><p>然后在plugin中配置</p><div class="language- extra-class"><pre class="language-text"><code>exports.sequelize = {
+  enable: true,
+  package: &quot;egg-sequelize&quot;
+};
+</code></pre></div><p>在egg-sequelize源码中</p><div class="language- extra-class"><pre class="language-text"><code>    const defaultConfig = {
+    logging: app.logger,
+    host: 'localhost',
+    port: 3306,
+    username: 'root',
+    benchmark: true,
+    define: {
+      freezeTableName: false,
+      underscored: true,
+    },
+  };
+  const config = Object.assign(defaultConfig, app.config.sequelize);
+
+  app.Sequelize = Sequelize;
+
+  const sequelize = new Sequelize(config.database, config.username, config.password, config);
+
+  // app.sequelize
+  Object.defineProperty(app, 'model', {
+    value: sequelize,
+    writable: false,
+    configurable: false,
+  });
+
+  loadModel(app);
+
+  app.beforeStart(function* () {
+    yield authenticate(app);
+  });
+};
+</code></pre></div><p>给egg实例创建了一个model属性，这个属性的值就是根据上面在config中配置的mysql，来创建的sequelize对象。</p><ul><li>sequelize对象具备很多实用的方法</li><li>find：搜索数据库中的一个特定元素，可以通过 findById 或 findOne；</li><li>findOrCreate：搜索特定元素或在不可用时创建它；</li><li>findAndCountAll：搜索数据库中的多个元素，返回数据和总数；</li><li>findAll：在数据库中搜索多个元素；</li><li>复杂的过滤/ OR / NOT 查询；</li><li>使用 limit(限制)，offset(偏移量)，order(顺序)和 group(组)操作数据集;</li><li>count：计算数据库中元素的出现次数；</li><li>max：获取特定表格中特定属性的最大值；</li><li>min：获取特定表格中特定属性的最小值；</li><li>sum：特定属性的值求和；</li><li>create：创建数据库 Model 实例；</li><li>update：更新数据库 Model 实例；</li><li>destroy：销毁数据库 Model 实例。</li></ul><p>这样就可以在egg实例中使用app.model就能够获取到squeslize实例，并调用相关的方法</p><h3 id="model创建-2"><a href="#model创建-2" aria-hidden="true" class="header-anchor">#</a> Model创建</h3><p>每一个数据表的创建应该都建立在一定的规范上面，下面这段代码实现了一些基本的规则配置</p><div class="language- extra-class"><pre class="language-text"><code>function defineModel(app, name, attributes) {
+  let attrs = {};
+  for (let key in attributes) {
+    let value = attributes[key];
+    if (typeof value === &quot;object&quot; &amp;&amp; value[&quot;type&quot;]) {
+      value.allowNull = value.allowNull &amp;&amp; true;
+      attrs[key] = value;
+    } else {
+      attrs[key] = {
+        type: value,
+        allowNull: true
+      };
+    }
+  }
+
+  return app.model.define(name, attrs, {
+    createdAt: &quot;createdAt&quot;,
+    updatedAt: &quot;updatedAt&quot;,
+    version: true,
+    freezeTableName: true
+  });
+}
+
+module.exports = { defineModel };
+</code></pre></div><p>下列这段代码是创建用户数据的实例， id这个字段标记了autoIncrement（默认自增从序列1开始，在创建的时候不用传入id参数），primaryKey标注此属性为主键。
+插入一条新的数据用create方法<code>await ctx.model.Post.create(ctx.request.body)</code></p><div class="language- extra-class"><pre class="language-text"><code>const db = require(&quot;../db&quot;);
+
+module.exports = app =&gt; {
+  const { STRING, INTEGER, DATE, BOOLEAN } = app.Sequelize;
+
+  const User = db.defineModel(app, &quot;users&quot;, {
+    id: {
+      type: INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+    username: { type: STRING, unique: true, allowNull: false }, // 用户名
+    email: { type: STRING, unique: true, allowNull: false }, // 邮箱
+    password: { type: STRING, allowNull: false }, // 密码
+    name: STRING, // 姓名
+    sex: INTEGER, // 用户性别：1男性, 2女性, 0未知
+    age: INTEGER, // 年龄
+    avatar: STRING, // 头像
+    company: STRING, // 公司
+    department: STRING, // 部门
+    telePhone: STRING, // 联系电话
+    mobilePhone: STRING, // 手机号码
+    info: STRING, // 备注说明
+    roleId: STRING, // 角色id
+    status: STRING, // 用户状态
+    token: STRING, // 认证 token
+    lastSignInAt: DATE // 上次登录时间
+  });
+
+  return User;
+};
+</code></pre></div></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/webpack-vue.html" class="prev">
+          webpack-vue多页面配置
+        </a></span><span class="next"><a href="/eslint.html">
+          微信小程序eslint配置
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/app.1700d348.js" defer></script><script src="/assets/js/9.44fd09d3.js" defer></script>
+  </body>
+</html>
